@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // Устанавливаем целевой стандарт JavaScript
+        "module": "commonjs", // Используем CommonJS для модулей
+        "outDir": "./dist", // Каталог для скомпилированных файлов
+        "rootDir": "./", // Корневой каталог исходных файлов
+        "strict": true, // Включаем строгую проверку типов
+        "esModuleInterop": true, // Разрешаем импорт модулей, совместимых с CommonJS
+        "skipLibCheck": true, // Пропускаем проверку типов библиотек для ускорения компиляции
+        "forceConsistentCasingInFileNames": true, // Соблюдаем единый регистр в именах файлов
+        "resolveJsonModule": true, // Разрешаем импорт JSON файлов
+        "baseUrl": ".", // Устанавливаем базовый URL для разрешения модулей
+        "paths": {
+            // Настраиваем пути для модулей
+            "*": ["node_modules/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts", // Включаем все TypeScript файлы в каталоге src
+        "tests/*.ts" // Включаем все TypeScript файлы в каталоге tests
+    ],
+    "exclude": [
+        "node_modules" // Исключаем каталог node_modules
+    ]
+}
